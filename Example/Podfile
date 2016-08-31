@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TJAvatarLoadIndicator_Example' do
+  pod 'TJAvatarLoadIndicator', :path => '../'
+
+  target 'TJAvatarLoadIndicator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
