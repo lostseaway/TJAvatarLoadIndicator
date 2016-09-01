@@ -1,9 +1,10 @@
 # TJAvatarLoadIndicator
 
-[![CI Status](http://img.shields.io/travis/Thunyathon Jaruchotrattanasakul/TJAvatarLoadIndicator.svg?style=flat)](https://travis-ci.org/Thunyathon Jaruchotrattanasakul/TJAvatarLoadIndicator)
 [![Version](https://img.shields.io/cocoapods/v/TJAvatarLoadIndicator.svg?style=flat)](http://cocoapods.org/pods/TJAvatarLoadIndicator)
 [![License](https://img.shields.io/cocoapods/l/TJAvatarLoadIndicator.svg?style=flat)](http://cocoapods.org/pods/TJAvatarLoadIndicator)
 [![Platform](https://img.shields.io/cocoapods/p/TJAvatarLoadIndicator.svg?style=flat)](http://cocoapods.org/pods/TJAvatarLoadIndicator)
+
+![noti](http://i.giphy.com/l2SpSlJpYFkcRxhHa.gif)
 
 ## Example
 
