@@ -7,18 +7,42 @@
 //
 
 import UIKit
+import RxSwift
+import TJAvatarLoadIndicator
 
 class ViewController: UIViewController {
-
+    
+    private var state = 0
+    private var tmp: Variable<Bool>!
+    @IBOutlet weak var image: TJAvatarLoadIndicator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        image.centerImage = UIImage(named: "Placeholder")!
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        image.startLoading()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func startStop(sender: AnyObject) {
+        if state == 1 {
+            image.startLoading()
+            state = 0
+        }else {
+            image.completeLoading({
+                print("Complete!")
+            })
+            state = 1
+        }
+    }
+    
+    
 }
 

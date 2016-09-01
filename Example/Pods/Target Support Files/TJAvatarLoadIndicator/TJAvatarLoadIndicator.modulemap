@@ -1,0 +1,6 @@
+framework module TJAvatarLoadIndicator {
+  umbrella header "TJAvatarLoadIndicator-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,25 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="baQ-sF-h0I">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="QqK-Bu-aky">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="baQ-sF-h0I" customClass="ViewController" customModule="TJAvatarLoadIndicator_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="niS-KJ-VbD"/>
+                        <viewControllerLayoutGuide type="bottom" id="E10-qz-HfE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="yaO-Ug-MRd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-dT-lvX" customClass="TJAvatarLoadIndicator" customModule="TJAvatarLoadIndicator">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bKO-dT-lvX" secondAttribute="height" multiplier="1:1" id="qIG-pi-o8X"/>
+                                    <constraint firstAttribute="height" constant="240" id="zZD-9a-cgo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="degree">
+                                        <real key="value" value="135"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="centerImage" value="Placeholder"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCO-kL-hv1">
+                                <rect key="frame" x="261" y="550" width="79" height="30"/>
+                                <state key="normal" title="Start / Stop"/>
+                                <connections>
+                                    <action selector="startStop:" destination="baQ-sF-h0I" eventType="touchUpInside" id="Lrw-D1-qaD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nCO-kL-hv1" firstAttribute="centerX" secondItem="yaO-Ug-MRd" secondAttribute="centerX" id="0tF-5B-m4C"/>
+                            <constraint firstItem="bKO-dT-lvX" firstAttribute="centerX" secondItem="yaO-Ug-MRd" secondAttribute="centerX" id="BIE-w2-5H6"/>
+                            <constraint firstItem="bKO-dT-lvX" firstAttribute="centerY" secondItem="yaO-Ug-MRd" secondAttribute="centerY" id="KWH-Bq-yAz"/>
+                            <constraint firstItem="E10-qz-HfE" firstAttribute="top" secondItem="nCO-kL-hv1" secondAttribute="bottom" constant="20" id="YCj-Hl-1YW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="bKO-dT-lvX" id="AM8-Sv-Rqd"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3s-cs-PLG" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="197" y="589"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Placeholder" width="1024" height="1024"/>
+    </resources>
 </document>

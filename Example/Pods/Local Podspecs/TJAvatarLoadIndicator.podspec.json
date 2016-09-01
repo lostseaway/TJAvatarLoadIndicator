@@ -1,0 +1,35 @@
+{
+  "name": "TJAvatarLoadIndicator",
+  "version": "0.1.0",
+  "summary": "A short description of TJAvatarLoadIndicator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TJAvatarLoadIndicator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Thunyathon Jaruchotrattanasakul": "lostseaway@me.com"
+  },
+  "source": {
+    "git": "https://github.com/lostseaway/TJAvatarLoadIndicator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TJAvatarLoadIndicator/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "RxSwift": [
+      "~> 2.0"
+    ],
+    "SnapKit": [
+      "~> 0.15.0"
+    ],
+    "RxCocoa": [
+      "~> 2.0"
+    ]
+  }
+}

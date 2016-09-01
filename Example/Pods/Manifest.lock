@@ -1,0 +1,29 @@
+PODS:
+  - RxCocoa (2.6.0):
+    - RxSwift (~> 2.5)
+  - RxSwift (2.6.0)
+  - SnapKit (0.15.0)
+  - TJAvatarLoadIndicator (0.1.0):
+    - RxCocoa (~> 2.0)
+    - RxSwift (~> 2.0)
+    - SnapKit (~> 0.15.0)
+
+DEPENDENCIES:
+  - RxCocoa (~> 2.0)
+  - RxSwift (~> 2.0)
+  - SnapKit (~> 0.15.0)
+  - TJAvatarLoadIndicator (from `../`)
+
+EXTERNAL SOURCES:
+  TJAvatarLoadIndicator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
+  RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+  TJAvatarLoadIndicator: c2e42ff451b99fef8b1cbbe626cfca83b4ec6f38
+
+PODFILE CHECKSUM: 52d6b7be2f10bec909f043c1ea0b82c78defc17a
+
+COCOAPODS: 1.0.1

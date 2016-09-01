@@ -2,7 +2,9 @@ use_frameworks!
 
 target 'TJAvatarLoadIndicator_Example' do
   pod 'TJAvatarLoadIndicator', :path => '../'
-
+  pod 'SnapKit', '~> 0.15.0'
+  pod 'RxSwift',    '~> 2.0'
+  pod 'RxCocoa',    '~> 2.0'
   target 'TJAvatarLoadIndicator_Tests' do
     inherit! :search_paths
 
